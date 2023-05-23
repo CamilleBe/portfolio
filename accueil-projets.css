@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(240, 229, 240);
+}
+
+nav {
+    background-color: #FFFFFF;
+}
+
+/* ACCUEIL PROJET */
+#apercu {
+    background-image: url("img/projet_watercolor.png");
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.rectangle {
+    width: 70%;
+    cursor: pointer;
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
+}
+
+.rectangle:hover {
+    cursor: pointer;
+    background: rgb(240,229,240);
+    background: linear-gradient(90deg, rgba(240,229,240,1) 0%, rgba(238,186,238,1) 50%);
+}
+
+.rectangle div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+

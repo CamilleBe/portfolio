@@ -22,21 +22,25 @@ button {
     border: 1px solid #3D3D3D;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /*MAIN*/
-#container-button, main {
+#container-button, main, #container-list {
     display: flex;
 }
 
-main {
+main, #container-list {
     margin-top: 25px;
     align-items: center;
 }
 
-#first-div, #second-div {
+.first-div, #second-div, #list-project, #apercu {
     width: 50%;
 }
 
-#first-div {
+.first-div {
     margin-left: 125px;
 }
 
@@ -64,9 +68,18 @@ main p, button {
     color: #FFFFFF;
 }
 
-#btn-contact {
-    border: 1px solid;
+#btn-projects button:hover {
     background-color: #FFFFFF;
+    color: #3D3D3D;
+}
+
+#btn-contact button {
+    background-color: #FFFFFF;
+}
+
+#btn-contact button:hover {
+    background-color: #3D3D3D;
+    color: #FFFFFF;
 }
 
 #second-div {
