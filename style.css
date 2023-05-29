@@ -40,7 +40,7 @@ main, #container-list {
     align-items: center;
 }
 
-.first-div, #second-div, #list-project, #apercu {
+.first-div, #second-div, #list-project, #apercu, #skills-container {
     width: 50%;
 }
 

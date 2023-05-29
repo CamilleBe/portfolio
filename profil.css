@@ -1,0 +1,42 @@
+.first-div {
+    background-image: url("./img/accueil_watercolor.png");
+    height: 500px;
+    width: 50%;
+}
+
+#post-it {
+    background-color: #FDE0F2;
+    width: 80%;
+    padding: 25px;
+}
+
+/*skills*/
+#skills-container {
+    padding: 50px;
+    width: 50%;
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.horizontal {
+    width: 1px;
+    background-color: black;
+    height: 150px;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
