@@ -8,27 +8,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <nav>
-        <p>HOME</p>
+        <a href="index.html">
+            <p>HOME</p>
+        </a>
         <img src="img/logo.png" alt="logo">
-        <p>MES PROJETS</p>
+        <a href="accueil-projet.html">
+            <p>MES PROJETS</p>
+        </a>
     </nav>
 
     <div id="container-list">
         <div class="first-div">
             <h1>MES PROJETS</h1>
-
-            <a>
-                <div class="rectangle">
+            <a href="">
+                <div class="rectangle" id="gderid" data-image="./img/apercu-gder.png">
                     <div>
                         <h2>
-                            Kit mailing
+                            GDER
                         </h2>
                         <div>
-                            <p> > </p>
+                            <img src="img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="rectangle"  id="super-senior" data-image="./img/Accueil.png">
+                    <div>
+                        <h2>
+                            Super Senior
+                        </h2>
+                        <div>
+                            <img src="img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </a>
+            <a href="">
+                <div class="rectangle" id="eco-confort" data-image="./img/apercu-ecs.png">
+                    <div>
+                        <h2>
+                            EcoConfortSolutions
+                        </h2>
+                        <div>
+                            <img src="img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </a>
+            <a href="">
+                <div class="rectangle" id="mutuelle-protect" data-image="./img/apercu-mutuelle.png">
+                    <div>
+                        <h2>
+                            Mutuelle Protect
+                        </h2>
+                        <div>
+                            <img src="img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="rectangle" id="protege-auto" data-image="./img/apercu-auto.png">
+                    <div>
+                        <h2>
+                            Protège auto
+                        </h2>
+                        <div>
+                            <img src="img/arrow.svg" alt="arrow">
                         </div>
                     </div>
 
@@ -39,8 +99,88 @@
         </div>
 
         <div id="apercu">
-
+            <img src="" id="preview-image">
         </div>
     </div>
 </body>
+<script>
+    // Récupérer l'élément rectangle
+    const gderconst = document.getElementById('gderid');
+
+    // Récupérer l'élément de prévisualisation
+    const previewImage = document.getElementById('preview-image');
+
+    // Ajouter un événement de survol
+    gderconst.addEventListener('mouseover', function() {
+        // Récupérer le chemin de l'image à partir de l'attribut data-image
+        const imagePath = gderconst.getAttribute('data-image');
+
+        // Mettre à jour l'attribut src de l'image de prévisualisation
+        previewImage.src = imagePath;
+    });
+
+    // Réinitialiser l'image de prévisualisation lorsque le survol se termine
+    gderconst.addEventListener('mouseout', function() {
+        previewImage.src = '';
+    });
+
+
+    //SUPER SENIOR
+    const superConst = document.getElementById('super-senior');
+
+
+    superConst.addEventListener('mouseover', function() {
+
+        const imagePath = superConst.getAttribute('data-image');
+        previewImage.src = imagePath;
+    });
+    // Réinitialiser l'image de prévisualisation lorsque le survol se termine
+    superConst.addEventListener('mouseout', function() {
+        previewImage.src = '';
+    });
+
+    //ECO CONFORT SOLUTION
+    const ecoConst = document.getElementById('eco-confort');
+
+
+    ecoConst.addEventListener('mouseover', function() {
+
+        const imagePath = ecoConst.getAttribute('data-image');
+        previewImage.src = imagePath;
+    });
+    // Réinitialiser l'image de prévisualisation lorsque le survol se termine
+    ecoConst.addEventListener('mouseout', function() {
+        previewImage.src = '';
+    });
+
+
+    //ECO MUTUELLE PROTECT
+    const mutuelleConst = document.getElementById('mutuelle-protect');
+
+
+    mutuelleConst.addEventListener('mouseover', function() {
+
+        const imagePath = mutuelleConst.getAttribute('data-image');
+        previewImage.src = imagePath;
+    });
+    // Réinitialiser l'image de prévisualisation lorsque le survol se termine
+    mutuelleConst.addEventListener('mouseout', function() {
+        previewImage.src = '';
+    });
+
+    //AUTO
+    const autoConst = document.getElementById('protege-auto');
+
+
+    autoConst.addEventListener('mouseover', function() {
+
+        const imagePath = autoConst.getAttribute('data-image');
+        previewImage.src = imagePath;
+    });
+    // Réinitialiser l'image de prévisualisation lorsque le survol se termine
+    autoConst.addEventListener('mouseout', function() {
+        previewImage.src = '';
+    });
+
+</script>
 </html>

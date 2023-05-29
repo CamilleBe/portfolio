@@ -7,25 +7,38 @@ nav {
 }
 
 /* ACCUEIL PROJET */
+#container-list {
+    display: flex;
+}
+
 #apercu {
     background-image: url("img/projet_watercolor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#apercu img{
+    width: 300px;
+    max-height: 450px;
 }
 
 h1 {
     margin-bottom: 25px;
 }
 
+
 .rectangle {
     width: 70%;
     cursor: pointer;
     background-size: 200% 100%;
     transition: background-position 0.5s;
-}
-
-.rectangle:hover {
-    cursor: pointer;
-    background: rgb(240,229,240);
-    background: linear-gradient(90deg, rgba(240,229,240,1) 0%, rgba(238,186,238,1) 50%);
+    position: relative;
+    overflow: hidden;
 }
 
 .rectangle div {
@@ -36,5 +49,72 @@ h1 {
     padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
+    /*position: relative;
+    overflow: hidden;*/
 }
+
+
+/*.rectangle:hover {
+    cursor: pointer;*/
+    /*background: rgb(240,229,240);*/
+    /*background: linear-gradient(90deg, rgba(240,229,240,1) 0%, rgba(238,186,238,1) 50%);
+    transform-origin: left;
+    transform: scaleX(0.5);
+    animation: progress-bar 1000ms 150ms both;
+}*/
+
+/*@keyframes progress-bar{
+ 0% {
+     transform: scaleX(0);
+     opacity: .1;
+ }
+ 17% {
+     transform: scaleX(.18);
+ }
+ 24% {
+     transform: scaleX(.40);
+     animation-timing-function: cubic-bezier(.9,0,.1,1);
+ }
+ 46% {
+     transform: scaleX(.81);
+ }
+ 85%,100% {
+     opacity: 1;
+ }
+ 100% {
+     transform: scaleX(1);
+ }
+}*/
+
+/*#monBouton {
+    position: relative;
+    overflow: hidden;
+    background-color: #fde0e0; /* Couleur de départ du dégradé */
+    /*color: white;
+    padding: 10px 20px;
+    border: none;
+}*/
+
+.rectangle::before {
+    content: "Voir plus" url("img/arrow.svg");
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(240,229,240,1) 0%, rgba(238,186,238,1) 50%); /* Dégradé de gauche à droite */
+    transition: right 0.3s;
+    padding-top: 5%;
+}
+
+.rectangle:hover::before {
+    right: 0;
+    transition: right 0.3s;
+    color: #3b3b3b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
 
