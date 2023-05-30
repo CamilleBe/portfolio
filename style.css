@@ -4,10 +4,13 @@
     list-style-type: none;
     text-decoration: none;
     font-family: 'Gilda Display', serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
 nav {
-    box-shadow: 1px 1px 20px 1px #5b5b5b;
+    box-shadow: 1px 1px 10px 1px #5b5b5b;
     color: #3D3D3D;
     display: flex;
     justify-content: space-around;
@@ -35,13 +38,18 @@ a {
     display: flex;
 }
 
+main {
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
 main, #container-list {
-    margin-top: 25px;
+    /*margin-top: 25px;*/
     align-items: center;
 }
 
 .first-div, #second-div, #list-project, #apercu{
-    width: 50%;
+    width: 40%;
 }
 
 .first-div {
@@ -49,7 +57,6 @@ main, #container-list {
 }
 
 main h1 {
-    width: 700px;
     font-size: 60px;
 }
 
@@ -91,6 +98,10 @@ main p, button {
     justify-content: right;
 }
 
+#testimg{
+    width: 40%;
+}
+
 #second-div img {
-    width: 80%;
+    width: 760px;
 }

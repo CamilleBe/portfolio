@@ -1,0 +1,29 @@
+* {
+    overflow-x: initial;
+    overflow-y: initial;
+}
+#container-all {
+    background-color: #F0E5F0;
+    display: flex;
+}
+
+.explication, .illustration {
+    width: 50%;
+}
+
+.explication {
+    padding: 25px;
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.illustration img {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 25px;
+}

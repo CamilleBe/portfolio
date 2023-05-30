@@ -1,3 +1,8 @@
+* {
+    overflow-x: initial;
+    overflow-y: initial;
+}
+
 body {
     color: #3b3b3b;
 }
@@ -6,15 +11,18 @@ body {
     background-image: url("./img/accueil_watercolor.png");
     background-position: left;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 500px;
-    width: 50%;
-    padding-right: 25%;
+    margin-right: 150px;
+    width:60%;
 }
 
 #post-it {
-    background-color: #FDE0F2;
-    width: 80%;
+    background-color: rgba(253, 224, 242, 0.71);
+    width: 70%;
     padding: 25px;
+    margin-top: 100px;
+    float: right;
 }
 
 h3 {

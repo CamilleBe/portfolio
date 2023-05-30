@@ -1,9 +1,18 @@
+* {
+    overflow-x: initial;
+    overflow-y: initial;
+}
+
 body {
     background-color: rgb(240, 229, 240);
+
 }
 
 nav {
     background-color: #FFFFFF;
+}
+.first-div {
+    margin-top: 25px;
 }
 
 /* ACCUEIL PROJET */
@@ -96,7 +105,7 @@ h1 {
 }*/
 
 .rectangle::before {
-    content: "Voir plus" url("img/arrow.svg");
+    content: "Voir plus" /*url("img/arrow.svg")*/;
     position: absolute;
     top: 0;
     right: 100%;
