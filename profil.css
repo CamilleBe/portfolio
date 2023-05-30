@@ -1,7 +1,14 @@
+body {
+    color: #3b3b3b;
+}
+/*POST IT*/
 .first-div {
     background-image: url("./img/accueil_watercolor.png");
+    background-position: left;
+    background-repeat: no-repeat;
     height: 500px;
     width: 50%;
+    padding-right: 25%;
 }
 
 #post-it {
@@ -9,6 +16,31 @@
     width: 80%;
     padding: 25px;
 }
+
+h3 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.marge-left {
+    margin-left: 5px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+ul li img {
+    margin-right: 10px;
+}
+
+#localisaion {
+    width: 35px;
+    margin-right: 0;
+}
+
 
 /*skills*/
 #skills-container {
@@ -20,13 +52,17 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    width: 95%;
+    width: 70%;
+    margin-left: 25%;
 }
 
 .list {
     display: flex;
     align-items: center;
-    width: 90%;
+}
+
+.container-line  {
+    width: 70%;
 }
 
 .horizontal {
@@ -40,3 +76,4 @@ h2 {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
