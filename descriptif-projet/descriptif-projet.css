@@ -34,24 +34,32 @@ span {
     font-weight: bold;
 }
 
-#post-it p span:first-child {
+#html {
     background-color: #d39095;
 }
 
-#post-it p span:nth-child(2) {
+#css {
     background-color: #c75c92;
 }
 
-#post-it p span:nth-child(3) {
+#javascript {
+    background-color: #a61e62;
+}
+
+#php {
     background-color: #9670CB;
 }
 
-#post-it p span:nth-child(4) {
+#mysql {
     background-color: #670fd9;
 }
 
-#post-it p span:nth-child(5) {
+#design {
     background-color: #d9810f;
+}
+
+#integration {
+    background-color: #26828c;
 }
 
 /*descriptif*/
