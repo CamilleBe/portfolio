@@ -2,22 +2,81 @@
     overflow-x: initial;
     overflow-y: initial;
 }
+
 #container-all {
     background-color: #F0E5F0;
-    display: flex;
 }
 
 .explication, .illustration {
     width: 50%;
 }
 
-.explication {
-    padding: 25px;
+.dis {
+    display: flex;
 }
 
+#post-it {
+    display: flex;
+}
+
+#post-it p {
+    font-size: 16px;
+}
+
+span {
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    color: #F0E5F0;
+    font-weight: bold;
+}
+
+#post-it p span:first-child {
+    background-color: #d39095;
+}
+
+#post-it p span:nth-child(2) {
+    background-color: #c75c92;
+}
+
+#post-it p span:nth-child(3) {
+    background-color: #9670CB;
+}
+
+#post-it p span:nth-child(4) {
+    background-color: #670fd9;
+}
+
+#post-it p span:nth-child(5) {
+    background-color: #d9810f;
+}
+
+/*descriptif*/
+
+.explication {
+    padding: 35px;
+}
+
+h1, p  {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/*ILLUSTATION*/
 .illustration {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 25px;
 }
@@ -26,4 +85,21 @@
     width: 70%;
     margin: auto;
     margin-bottom: 25px;
+}
+#gallery {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
