@@ -94,10 +94,8 @@ p {
     margin: auto;
     margin-bottom: 25px;
 }
-#gallery {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
+#gallery img{
+    margin: 0;
 }
 
 .col {
