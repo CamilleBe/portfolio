@@ -85,3 +85,33 @@ h2 {
     margin-top: 20px;
 }
 
+@media (max-width: 950px) {
+    #container-list {
+        flex-wrap: wrap;
+    }
+
+    .first-div, #skills-container {
+        width: 100%;
+    }
+
+    #skills-container {
+        margin-top: 50px;
+    }
+}
+
+@media  (max-width: 624px) {
+    #skills-container {
+        margin-top: 0;
+    }
+
+    #post-it {
+        width: 100%;
+    }
+
+    .first-div {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 90%;
+    }
+}
