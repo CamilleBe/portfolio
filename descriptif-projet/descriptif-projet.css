@@ -30,10 +30,13 @@ body {
 
 #post-it p {
     font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 span {
     margin-right: 5px;
+    margin-bottom: 15px;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 5px;
@@ -117,4 +120,21 @@ hr {
     width: 90%;
     margin-bottom: 40px;
     margin-top: 40px;
+}
+
+@media (max-width: 1400px) {
+    .illustration img {
+        width: 500px;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .illustration {
+        display: none;
+    }
+
+    .explication {
+        width: 100%;
+    }
 }

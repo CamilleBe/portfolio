@@ -83,6 +83,16 @@ h1 {
     font-weight: bold;
 }
 
+@media (max-width: 1200px) {
+    #container-list {
+        justify-content: center;
+    }
+
+    #apercu {
+        width: 40%;
+    }
+}
+
 
 
 
