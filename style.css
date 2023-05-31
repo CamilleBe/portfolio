@@ -110,3 +110,46 @@ main p, button {
 #second-div img {
     width: 760px;
 }
+
+@media (max-width: 1150px) {
+    main h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    main h1 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 800px) {
+    main img {
+        display: none;
+    }
+    main .first-div {
+        width: 90%;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav a:first-child, nav a:nth-child(3) {
+        display: none;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    main button {
+        font-size: 16px;
+    }
+}
