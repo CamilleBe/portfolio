@@ -3,8 +3,17 @@
     overflow-y: initial;
 }
 
-#container-all {
+nav {
+    background-color: #FFFFFF;
+}
+
+body {
     background-color: #F0E5F0;
+
+}
+
+#container-all {
+    margin-top: 20px;
 }
 
 .explication, .illustration {
@@ -68,7 +77,7 @@ span {
     padding: 35px;
 }
 
-h1, p  {
+#container-all h1, #container-all p  {
     margin-bottom: 30px;
 }
 
